@@ -87,8 +87,8 @@ spec:
             {{- end }}
           {{- end }}
           {{- if .Values.servingEngineSpec.securityContext }}
-            securityContext:
-              {{- toYaml .Values.servingEngineSpec.containerSecurityContext | nindent 12 }}
+          securityContext:
+            {{- toYaml .Values.servingEngineSpec.containerSecurityContext | nindent 12 }}
           {{- end }}
       {{- end }}
       {{- if .Values.servingEngineSpec.securityContext }}
